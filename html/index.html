@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <section class="hud-container">
+      <div class="hud heart">
+        <svg
+          width="29"
+          height="29"
+          viewBox="0 0 29 29"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2.8347 13.5939C2.56722 12.7921 2.41669 11.9869 2.41669 11.1897C2.41669 4.04731 9.06271 0.800687 14.5 6.64435C19.9373 0.800687 26.5834 4.04708 26.5834 11.1896C26.5834 11.9869 26.4328 12.7921 26.1654 13.5939H22.5186L22.3833 13.5937C21.7239 13.5927 21.1382 13.5917 20.6054 13.829C20.0724 14.0663 19.6812 14.5024 19.2407 14.9935L19.1503 15.0943L17.9066 16.4761C17.814 16.5789 17.7384 16.6629 17.6715 16.7346C17.6082 16.6604 17.5363 16.5734 17.4485 16.4668L13.1574 11.2655C12.9888 11.061 12.8084 10.8421 12.6319 10.6797C12.4264 10.4906 12.1226 10.2779 11.6978 10.2523C11.2731 10.2268 10.946 10.4017 10.7193 10.5649C10.5247 10.705 10.3194 10.9007 10.1275 11.0835L8.27918 12.8439C7.70913 13.3868 7.59018 13.4793 7.46576 13.529C7.34133 13.5788 7.19142 13.5939 6.40419 13.5939H2.8347Z"
+            fill="#D43F3F"
+          />
+          <path
+            d="M3.63031 15.4064C5.29899 18.5021 8.37408 21.4047 10.8287 23.4063C12.4382 24.7188 13.243 25.3751 14.5 25.3751C15.757 25.3751 16.5618 24.7188 18.1713 23.4063C20.6259 21.4047 23.701 18.5021 25.3697 15.4064H22.5186C21.6435 15.4064 21.4776 15.4247 21.3427 15.4849C21.2078 15.5449 21.0831 15.6561 20.4974 16.3068L19.2229 17.7229C19.0321 17.9351 18.8305 18.1593 18.6367 18.3218C18.413 18.5093 18.0799 18.7197 17.6291 18.71C17.1784 18.7002 16.8548 18.476 16.6392 18.279C16.4526 18.1084 16.261 17.8759 16.0798 17.656L11.7871 12.4528C11.7055 12.3539 11.6391 12.2735 11.5805 12.2048C11.5142 12.266 11.4386 12.3379 11.3458 12.4263L9.44124 14.2403C9.01113 14.6511 8.62947 15.0157 8.13887 15.212C7.64826 15.4082 7.12047 15.4074 6.52563 15.4066L3.63031 15.4064Z"
+            fill="#D43F3F"
+          />
+        </svg>
+      </div>
+      <div class="hud food">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20.7103 3.17953C17.9738 2.09672 14.8734 1.5 11.9794 1.5C9.00001 1.5 5.89501 2.08734 3.23439 3.15281C2.28282 3.53859 2.11923 4.21875 2.28329 4.72594L2.47407 5.20312C2.5115 5.29657 2.56736 5.38153 2.63832 5.45293C2.70928 5.52434 2.79389 5.58072 2.8871 5.61873C2.98031 5.65675 3.08023 5.6756 3.18088 5.67418C3.28154 5.67276 3.38088 5.65109 3.47298 5.61047C3.97923 5.38734 4.5947 5.11641 4.7386 5.05828C6.80157 4.20188 9.31454 3.75 12 3.75C14.6939 3.75 17.0667 4.18313 19.2544 5.07422C19.4616 5.15859 19.9519 5.37516 20.4811 5.61141C20.573 5.65246 20.6723 5.67459 20.7729 5.67648C20.8735 5.67837 20.9735 5.65998 21.0669 5.62241C21.1603 5.58483 21.2452 5.52884 21.3165 5.45778C21.3878 5.38671 21.444 5.30202 21.4819 5.20875L21.6563 4.78125L21.6722 4.73906C21.8339 4.26047 21.6788 3.56484 20.7103 3.17953Z"
+            fill="#D1B55D"
+          />
+          <path
+            d="M19.1803 6.60281C17.0471 5.74359 14.4225 5.25 11.9794 5.25C9.51411 5.25162 7.07054 5.7108 4.77284 6.60422C4.74799 6.61406 4.67627 6.64547 4.57174 6.69234C4.48137 6.73285 4.39991 6.79085 4.33207 6.863C4.26423 6.93515 4.21135 7.02002 4.17649 7.11272C4.14163 7.20542 4.12547 7.3041 4.12894 7.40307C4.13242 7.50205 4.15546 7.59935 4.19674 7.68937C4.38424 8.09766 4.6383 8.65406 4.9233 9.27797C6.46596 12.6562 9.33799 18.9375 10.6528 21.6562C10.7746 21.9099 10.9658 22.1238 11.2043 22.2731C11.4428 22.4225 11.7187 22.5011 12 22.5C12.2819 22.5011 12.5582 22.4221 12.7969 22.2723C13.0356 22.1224 13.2267 21.9078 13.3481 21.6534L13.351 21.6473L19.7869 7.69875C19.8295 7.60747 19.8532 7.50853 19.8565 7.40786C19.8599 7.3072 19.8429 7.20689 19.8065 7.11297C19.7701 7.01905 19.7151 6.93346 19.6448 6.86134C19.5745 6.78922 19.4903 6.73205 19.3974 6.69328C19.2914 6.64875 19.2169 6.61781 19.1864 6.60562L19.1803 6.60281ZM9.09752 10.4967C8.79317 10.5166 8.49001 10.4432 8.22844 10.2863C7.96688 10.1294 7.75935 9.89656 7.63352 9.61873C7.50769 9.3409 7.46955 9.03131 7.52417 8.73125C7.5788 8.43118 7.7236 8.1549 7.93926 7.93924C8.15492 7.72357 8.43121 7.57878 8.73127 7.52415C9.03134 7.46953 9.34092 7.50767 9.61875 7.6335C9.89658 7.75933 10.1295 7.96686 10.2863 8.22842C10.4432 8.48998 10.5166 8.79315 10.4967 9.0975C10.4731 9.46081 10.318 9.80311 10.0606 10.0606C9.80313 10.318 9.46084 10.473 9.09752 10.4967ZM12.0975 16.4967C11.7932 16.5166 11.49 16.4432 11.2284 16.2863C10.9669 16.1294 10.7593 15.8966 10.6335 15.6187C10.5077 15.3409 10.4696 15.0313 10.5242 14.7312C10.5788 14.4312 10.7236 14.1549 10.9393 13.9392C11.1549 13.7236 11.4312 13.5788 11.7313 13.5242C12.0313 13.4695 12.3409 13.5077 12.6188 13.6335C12.8966 13.7593 13.1295 13.9669 13.2863 14.2284C13.4432 14.49 13.5166 14.7931 13.4967 15.0975C13.4731 15.4608 13.318 15.8031 13.0606 16.0606C12.8031 16.318 12.4608 16.473 12.0975 16.4967ZM15.0975 11.2467C14.7932 11.2666 14.49 11.1932 14.2284 11.0363C13.9669 10.8794 13.7593 10.6466 13.6335 10.3687C13.5077 10.0909 13.4696 9.78131 13.5242 9.48125C13.5788 9.18118 13.7236 8.9049 13.9393 8.68924C14.1549 8.47357 14.4312 8.32878 14.7313 8.27415C15.0313 8.21953 15.3409 8.25767 15.6188 8.3835C15.8966 8.50933 16.1295 8.71686 16.2863 8.97842C16.4432 9.23998 16.5166 9.54315 16.4967 9.8475C16.4731 10.2108 16.318 10.5531 16.0606 10.8106C15.8031 11.068 15.4608 11.223 15.0975 11.2467Z"
+            fill="#D1B55D"
+          />
+        </svg>
+      </div>
+      <div class="hud water">
+        <svg
+          width="19"
+          height="19"
+          viewBox="0 0 19 19"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M13.3642 3.76045C11.6181 1.63702 9.89826 0.180047 9.82592 0.119091C9.63759 -0.0396971 9.36225 -0.0396971 9.17397 0.119091C9.10158 0.180047 7.38172 1.63707 5.6357 3.76045C3.25443 6.65628 2.047 9.27607 2.047 11.547C2.047 15.6565 5.39041 19 9.5 19C13.6096 19 16.953 15.6565 16.953 11.547C16.9529 9.27612 15.7455 6.65628 13.3642 3.76045ZM10.287 16.561C10.2222 16.5775 10.1573 16.5849 10.0935 16.5849C9.74483 16.5849 9.42685 16.3497 9.33686 15.9966C9.23042 15.5789 9.48214 15.1544 9.89967 15.0467C10.0423 15.0092 13.1682 14.1475 13.1681 11.0106C13.1681 10.5791 13.5179 10.2291 13.9495 10.2291C14.3811 10.2291 14.731 10.579 14.731 11.0105C14.7313 14.5059 11.8249 16.1697 10.287 16.561Z"
+            fill="#3FA3D4"
+          />
+        </svg>
+      </div>
+      <div class="hud mic">
+        <svg
+          width="19"
+          height="19"
+          viewBox="0 0 19 19"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9.48934 14.9053C6.14975 14.9053 3.4325 12.1883 3.4325 8.84846C3.4325 8.49141 3.72197 8.20215 4.07881 8.20215C4.43585 8.20215 4.72512 8.49162 4.72512 8.84846C4.72533 11.4754 6.86239 13.6127 9.48934 13.6127C12.1161 13.6127 14.2534 11.4754 14.2534 8.84867C14.2534 8.49162 14.5426 8.20236 14.8997 8.20236C15.2567 8.20236 15.546 8.49183 15.546 8.84867C15.5462 12.1883 12.8289 14.9053 9.48934 14.9053Z"
+            fill="#52D43F"
+          />
+          <path
+            d="M9.48933 12.7717C7.34434 12.7717 5.58936 11.0167 5.58936 8.87171V4.00446C5.58936 1.85948 7.34434 0.104492 9.48933 0.104492C11.6343 0.104492 13.3893 1.85948 13.3893 4.00446V8.8715C13.3893 11.0165 11.6343 12.7717 9.48933 12.7717Z"
+            fill="#52D43F"
+          />
+          <path
+            d="M9.48933 18.7104C9.13228 18.7104 8.84302 18.4211 8.84302 18.0641V14.4229C8.84302 14.0659 9.13249 13.7766 9.48933 13.7766C9.84637 13.7766 10.1356 14.0659 10.1356 14.4229V18.0641C10.1356 18.4211 9.84637 18.7104 9.48933 18.7104Z"
+            fill="#52D43F"
+          />
+          <path
+            d="M11.669 18.8744H7.30976C6.95272 18.8744 6.66345 18.5851 6.66345 18.2281C6.66345 17.8711 6.95293 17.5818 7.30976 17.5818H11.6688C12.0258 17.5818 12.3151 17.8711 12.3151 18.2281C12.3151 18.5851 12.026 18.8744 11.669 18.8744Z"
+            fill="#52D43F"
+          />
+        </svg>
+      </div>
+    </section>
+    <section class="carhud-container">
+      <div class="stats-car">
+        <div class="icon-row">
+          <div class="body-stat">
+            <div class="body-bar"></div>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 8L5.72187 10.2682C5.90158 10.418 6.12811 10.5 6.36205 10.5H17.6379C17.8719 10.5 18.0984 10.418 18.2781 10.2682L21 8M6.5 14H6.51M17.5 14H17.51M8.16065 4.5H15.8394C16.5571 4.5 17.2198 4.88457 17.5758 5.50772L20.473 10.5777C20.8183 11.1821 21 11.8661 21 12.5623V18.5C21 19.0523 20.5523 19.5 20 19.5H19C18.4477 19.5 18 19.0523 18 18.5V17.5H6V18.5C6 19.0523 5.55228 19.5 5 19.5H4C3.44772 19.5 3 19.0523 3 18.5V12.5623C3 11.8661 3.18166 11.1821 3.52703 10.5777L6.42416 5.50772C6.78024 4.88457 7.44293 4.5 8.16065 4.5ZM7 14C7 14.2761 6.77614 14.5 6.5 14.5C6.22386 14.5 6 14.2761 6 14C6 13.7239 6.22386 13.5 6.5 13.5C6.77614 13.5 7 13.7239 7 14ZM18 14C18 14.2761 17.7761 14.5 17.5 14.5C17.2239 14.5 17 14.2761 17 14C17 13.7239 17.2239 13.5 17.5 13.5C17.7761 13.5 18 13.7239 18 14Z"
+                stroke="#ffffff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+
+          <div class="engine-stat">
+            <div class="engine-bar"></div>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#ffffff"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14 8V5M11 5H17M6 12H3M3 9V15M21 11V19M9 12H9.01M12 12H12.01M15 12H15.01M6 8V16H8L10 19H18V10L16 8H6Z"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div class="speedometer">
+          <h1 class="speedometer-value">0</h1>
+          <div class="line"><div class="fill"></div></div>
+          <div class="line"><div class="fill"></div></div>
+          <div class="line"><div class="fill"></div></div>
+          <div class="line"><div class="fill"></div></div>
+          <div class="line"><div class="fill"></div></div>
+          <div class="line"><div class="fill"></div></div>
+          <div class="line"><div class="fill"></div></div>
+          <div class="line"><div class="fill"></div></div>
+          <div class="line"><div class="fill"></div></div>
+          <div class="line"><div class="fill"></div></div>
+        </div>
+      </div>
+
+      <div class="fuel-container">
+        <div class="fuel-bar"></div>
+        <svg
+          viewBox="0 0 24 24"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          fill="#ffffff"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <title>gas_station_fill</title>
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Transport" transform="translate(-672.000000, -48.000000)">
+                <g
+                  id="gas_station_fill"
+                  transform="translate(672.000000, 48.000000)"
+                >
+                  <path
+                    d="M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z"
+                    id="MingCute"
+                    fill-rule="nonzero"
+                  ></path>
+                  <path
+                    d="M5,3 C3.89543,3 3,3.89543 3,5 L3,19 C2.44772,19 2,19.4477 2,20 C2,20.5523 2.44772,21 3,21 L15,21 C15.5523,21 16,20.5523 16,20 C16,19.4477 15.5523,19 15,19 L15,14 L16,14 L16,16.5 C16,17.8807 17.1193,19 18.5,19 C19.8807,19 21,17.8807 21,16.5 L21,10.4142 C21,9.88378 20.7893,9.37507 20.4142,9 L17.7071,6.29289 C17.3166,5.90237 16.6834,5.90237 16.2929,6.29289 C15.9024,6.68342 15.9024,7.31658 16.2929,7.70711 L17.3939,8.80814 C17.3676,8.84359 17.3424,8.87996 17.3185,8.91722 C17.1313,9.20781 17.0227,9.54194 17.0032,9.88702 C16.9837,10.2321 17.0539,10.5764 17.2071,10.8862 C17.3602,11.196 17.591,11.4609 17.877,11.655 C18.1631,11.849 18.4945,11.9657 18.839,11.9935 C18.8927,11.9978 18.9464,12 19,12 L19,16.5 C19,16.7761 18.7761,17 18.5,17 C18.2239,17 18,16.7761 18,16.5 L18,14 C18,12.8954 17.1046,12 16,12 L15,12 L15,5 C15,3.89543 14.1046,3 13,3 L5,3 Z M13,10 L13,5 L5,5 L5,10 L13,10 Z"
+                    id="形状"
+                    fill="#ffffff"
+                  ></path>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <section class="watermark-container">
+      <span class="player-id"></span>
+      <svg
+        width="22"
+        height="22"
+        viewBox="0 0 14 14"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <rect width="14" height="14" fill="url(#pattern0_141_33)" />
+        <defs>
+          <pattern
+            id="pattern0_141_33"
+            patternContentUnits="objectBoundingBox"
+            width="1"
+            height="1"
+          >
+            <use xlink:href="#image0_141_33" transform="scale(0.0104167)" />
+          </pattern>
+          <image
+            id="image0_141_33"
+            width="96"
+            height="96"
+            preserveAspectRatio="none"
+            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAE7ElEQVR4nO2d24uWVRSH90BjWdhUJmQHiIou86LutDIZxxotb6L+ADtA2skgIki7FJoOWkGnq6CDBBUmHQgi66ZuHB2lSJ2RtKummYSIDtA8sZg15NW4m2+/e639vvuBufn4Dr+1F7MPa6293hAqlUqlUqlUKpVKxRHAMmAIeBB4GfgcGAPGgWngL/2b1tfG9D0v6Wfks8us7SgGYDFwO/A8cBCYoXfkOw7od24AzrG20x3A9cBO4Bea5xTwJjAI9IWuApwN3A8cw46jwH2iJXRsmnkU+Ak/iJaHRVtoMzoHT+CXcWA4tA3gCuADyuF94PLQBoA7gCnK4xRwZygV4CxgR6KtpBUzujtbFEoCuBD4mvawD7gglACwXA8+beOw+3UBuAY4Tns5LjYGjwCXtnzw5zghu7rgCWAAGKU7HJJ1LnhAdggtW3Bj+RLo9+CAF+guz1gP/kbjff6HwE0SYgbOBVYDezL+vti+wTK8IIkQKx6fR9sTGXVICP2yvKM/a6RlbGdPhL6PMup5L8+o/2fcemxZHaFxTWZN63LG8y1DyjMy30foXJJZ15Es6U5Npljyc6ROWZRzsyVHGtE6kzUaqfUqo1Nyc5FTzeFaszdS641G+u5pavD7jBPoc7wWqfdubDjSSLUFcDM+2Bap9zFDjauacMAb+GBTpN5nDTW+mnrw5aj/Kz64NVLzu8b55HQlLlou6IUVkZq/MtaZrrxF6yq9cFGkZuv6o5GUDpBCWQ/8EbPD0B2bvNeS/SlLxL2UloxHal5qLRT4R3SkcMA6/LAvUvMKfDCYwgEP4Yd3IjUP44PNKRwgN1O8MBKp+V58sCuFA+TKjxe2Rmrejg8+S+EAKcHwwl2Rml/HBwdTOMBTsdWqSM1SUOuBiRQO8FRafmWk5j69evSbsd7JFA6Qa6BeOO9/ar8W+MZQ759tc8DAAu8pPAX8XaoDPE1BQz3YcZ1BSGWybYvwJwkqOnZmDK1MtG0bKmxPYJNc0j5JIdtQTwexOd7utTxcrhwBb1HAQUwaX3jkJLA2gX1Peg9FSNcRr8yIkb2m/xqsI00SjJOWL975HrihBxvXeA5HX+woITMfss/fJvv+Bdi4xG1CRgWWdO30WzkBO3BAmpSkCnyOsvgdeCC2Qq2hKWgkdZeTEvlUrs9G2Le3gd++LaUDFmuxUYlMSZ3oPLbJupGa6eRNoBwlOXr5bxjSigk5hK0FPqYZXkk6+OoAuY1YiWNlEw7o0x5rlfn5obFmgJplqiSo3l6oA/qBH88goMucaLy5E/CItZWO6T32E7kl9XBVyePcn6f/qLN6US+kO3hFOkFaO1Zm2Z118E9r1uEpYW/FZEy4o8meESWEqptCbN9oMvhObiNas8N08E87G0hfza7xhYuWZQJwfsea9o25a+SqbSutbybmQGxcHhw3bm2zEyaAq4NngEtaOh0dMukNtxA04SF9Ndu04A6EktCy8Ke1PKP09vX9oVQ0oZ/j6UipEc3rQxuQuVNaO1IOu83CC00C3AJ8h1+OxrbDKRZt/LdFs0dekCzf5q49T2yRNLjTHmuWSZRNxT0jpsFHGU5mGPT6KMMztEYb1gjraKItrHzHfqnVlKxVp6aZXmG2im1Q5+cX5cqPVmqPazJo7nG2U/raAX3PLi3OHUxWIl6pVCqVSqVSqVQqIQ3/Ajau4NXWgnveAAAAAElFTkSuQmCC"
+          />
+        </defs>
+      </svg>
+      <span class="time">12:15</span>
+    </section>
+    <section class="street-container">
+      <svg
+        width="22"
+        height="22"
+        viewBox="0 0 13 13"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <rect width="13" height="13" fill="url(#pattern0_146_16)" />
+        <defs>
+          <pattern
+            id="pattern0_146_16"
+            patternContentUnits="objectBoundingBox"
+            width="1"
+            height="1"
+          >
+            <use xlink:href="#image0_146_16" transform="scale(0.0104167)" />
+          </pattern>
+          <image
+            id="image0_146_16"
+            width="96"
+            height="96"
+            preserveAspectRatio="none"
+            xlink:href="data:image/png;base64,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"
+          />
+        </defs>
+      </svg>
+      <span class="street-name">Vinewood Boulevard</span>
+    </section>
+    <section class="settings-container">
+      <header>
+        <h1>Settings</h1>
+        <div class="close-menu">
+          <svg
+            width="17"
+            height="15"
+            viewBox="0 0 17 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <rect width="17" height="15" fill="url(#pattern0_142_109)" />
+            <defs>
+              <pattern
+                id="pattern0_142_109"
+                patternContentUnits="objectBoundingBox"
+                width="1"
+                height="1"
+              >
+                <use
+                  xlink:href="#image0_142_109"
+                  transform="matrix(0.00919118 0 0 0.0104167 0.0588235 0)"
+                />
+              </pattern>
+              <image
+                id="image0_142_109"
+                width="96"
+                height="96"
+                preserveAspectRatio="none"
+                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAC/klEQVR4nO2d2VITQRhGG8EXk2sfwTfwShEr7iuChsWiXMpdXFB8yGNNTcaKmsBM9/T+nUsuMn+fM50EJkyMEUIIIYQQQgghxECAdWDFVAJwHrgMrKYwzFVaXtcQAVgFvs/W/BNYS0E+NUTgb/lEjQBssph9UyDA2kz2Ir4FfTpacOb/F6GknUB75jeSTyPMTughv6gItPK/9lzzidcIA+QXEYFh8v1GmL3VtGE/Y/nHlmu+6GOgFeC5bYScdgKt/C+Wa534HKz4CLjJvxFiwCbCoW0Ek/+7nWVshhy0uAjYveCGl1/i0xGt/CPLtdyMOXj2EchVfgkRaOV/tpz9lkmFHCMA54qQn2MEWvmfipGfUwTc5N82qZNyBEqXn3IE2pmaC0Y23DG5kVIEapOfUgTaGV5ZznDX5E7MCNQuP2YE2mO+tDzmtimNkBGQ/HgRcJO/Y0rHZwTax34h+REi4Cb/qamNMSMg+fEi4Cb/makdHC9vOrzgbsVeeyk7wYZp7DXXHGEae601R5jGXmPNEXZjr63mCLux11RzhL3Ya6k5wl7sNWQPsO0QoOj/WfMO8MRBviIkIL9DESLK71CEPgBb+EMRIsrvUIRFAI8JhyLMA+xYijx0+FN28/uFIgCPLAW+mbsgY/vLWt07AUf5c4+jCLHkdyjCAICHY8rvUAS/8t82n+/v8fiKsAzggU/5HYowrvx3Q+TPHU8RYsnvUIRWwn1LAe9d5M8dv94IseVXHQG4l4L8KiOkJr+qCA7yP/iUX0UE4HrK8ouOcMqNXM/iY0j5RUbITX5RERzkH6dw9/GsIwDXcpafdYTmFo2WAx+lJH+kCGEvbwIbloP+iHq//X4RDpLeCRb3j85CfhYRgCuWg8X9pomwEQ68RHC4eXfYLzdI4zXhQioDZXXmj7QTJqkM5PfLDAIxcM2TVAYqQv7ANU9SGSiLdzsjPwVvmEQ+x/+rRPlnRAh35p8RoWj5SyLEld8BXKpB/j8R1v/8QAghhBBCCCGEEKYfvwH8o/vnIkJHNgAAAABJRU5ErkJggg=="
+              />
+            </defs>
+          </svg>
+        </div>
+      </header>
+      <div class="row-container">
+        <div class="row-container">
+          <div class="row">
+            <h5>Health</h5>
+            <input type="color" class="input" id="health" value="#D43F3F" />
+            <h5>Food</h5>
+            <input type="color" class="input" id="food" value="#D1B55D" />
+            <h5>Water</h5>
+            <input type="color" class="input" id="water" value="#3FA3D4" />
+            <h5>Microphone</h5>
+            <input type="color" class="input" id="microphone" value="#52D43F" />
+          </div>
+        </div>
+        <div class="row">
+          <h5>Type Hud:</h5>
+          <div class="square"></div>
+          <div class="wheel"></div>
+        </div>
+        <div class="row">
+          <h5>Cinema Mode</h5>
+          <button class="cinema-mode">OFF</button>
+        </div>
+      </div>
+    </section>
+    <section class="cinema">
+      <div class="top"></div>
+      <div class="bottom"></div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
